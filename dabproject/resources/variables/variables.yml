@@ -1,0 +1,4 @@
+variables:
+  catalog_name:
+    description: giving environment variable, its optional if we want or don't want to give description
+    default: assetbndles
