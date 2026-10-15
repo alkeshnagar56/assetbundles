@@ -1,0 +1,9 @@
+resources:
+  jobs:
+    dlt_orchestration_job:
+      name: run_demopipeline_${bundle.target}
+      tasks:
+        - task_key: run_pipeline_task
+          pipeline_task:
+            # Change this line to match your exact pipeline key:
+            pipeline_id: ${resources.pipelines.pipeline_demopipeline.id}
